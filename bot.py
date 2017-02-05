@@ -7,8 +7,8 @@ from botogram import create
 
 import cleverbot
 
-cw1 = cleverbot.Cleverbot()
-cw2 = cleverbot.Cleverbot()
+cw1 = cleverbot.Cleverbot('bot-1')
+cw2 = cleverbot.Cleverbot('bot-2')
 
 
 class TelegramBot:
@@ -86,8 +86,8 @@ while True:
     if mustStopped:
         sys.send(LANG_DETECT_WARNING)
         warn, msg = 0, FIRST_MESSAGE
-        cw1 = cleverbot.Cleverbot()
-        cw2 = cleverbot.Cleverbot()
+        cw1 = cleverbot.Cleverbot('bot-1')
+        cw2 = cleverbot.Cleverbot('bot-2')
         continue
 
     time.sleep(5)
@@ -98,6 +98,6 @@ while True:
     if mustStopped:
         sys.send(LANG_DETECT_WARNING)
         warn, msg = 0, FIRST_MESSAGE
-        cw1 = cleverbot.Cleverbot()
-        cw2 = cleverbot.Cleverbot()
+        cw1 = cleverbot.Cleverbot('bot-1')
+        cw2 = cleverbot.Cleverbot('bot-2')
         continue
