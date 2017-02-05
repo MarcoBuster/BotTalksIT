@@ -1,0 +1,2 @@
+botogram
+cleverbot==2.0.0
